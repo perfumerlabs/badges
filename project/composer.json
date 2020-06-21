@@ -1,0 +1,39 @@
+{
+    "name": "perfumerlabs/badges",
+    "type": "library",
+    "description": "Badges docker container",
+    "homepage": "https://perfumerlabs.com",
+    "authors": [
+        {
+            "name": "Ilyas Makashev",
+            "email": "mehmatovec@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ext-mongodb": "*",
+        "mongodb/mongodb": "1.*",
+        "perfumer/framework": "0.8.3",
+        "pwfisher/command-line-php": "dev-master",
+        "symfony/console": "5.*",
+        "symfony/http-foundation": "5.*",
+        "nikic/fast-route": "1.*"
+    },
+    "require-dev": {
+        "filp/whoops": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Project\\": "src/",
+            "Badges\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
